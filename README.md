@@ -1,6 +1,6 @@
 # Introduction
 
-## Smart Charging API Project
+## Smart Charging API Project Version - 14
 
 My mission is to develop an efficient and user-friendly API that exposes a simplified smart charging. This API will allow users to manage groups, charge stations, and connectors in a seamless manner, ensuring smooth and reliable charging experiences for electric vehicles.
 
@@ -8,7 +8,7 @@ The Smart Charging API project promises to provide a robust and reliable platfor
 
 I'm committed to delivering a cutting-edge solution that aligns with industry standards and empowers users to manage their charging infrastructure efficiently. I look forward to a successful project that fosters sustainable transportation and supports the widespread adoption of electric vehicles.
 
-# SmartCharging Version - 14  Dependencies
+# Dependencies
 * Api.Contracts.Core.SmartCharging
 * Api.Services.Core.SmartCharging
 	* Dapper (2.0.143)
