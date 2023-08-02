@@ -1,5 +1,6 @@
 # SmartCharging
 **Version: 14** 
+
 An API that exposes a simplified smart charging
 
 # Dependencies
@@ -20,7 +21,9 @@ An API that exposes a simplified smart charging
 # Domain model
 
 **Group** – has a unique Identifier (cannot be changed), Name (can be changed), Capacity in Amps (integer, value greater than zero, can be changed). A Group can contain multiple charge stations.
+
 **Charge station**  – has a unique Identifier (cannot be changed), Name (can be changed), and Connectors (at least one, but not more than 5).
+
 **Connector** – has integer Identifier unique within the context of a charge station with (possible range of values from 1 to 5), Max current in Amps (integer, value greater than zero, can be changed).
 
 # Functional requirements
