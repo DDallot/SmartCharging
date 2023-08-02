@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Services.Core.SmartChar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Contracts.Core.SmartCharging", "contract\Api.Contracts.Core.SmartCharging.csproj", "{1903B1F7-9A79-4788-AD6B-2E24E8FE5D04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Services.Core.SmartCharging.UnitTests", "test\Api.Services.Core.SmartCharging.UnitTests.csproj", "{13ACB973-85DE-4DAC-93A1-2857C8194BD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Services.Core.SmartCharging.UnitTests", "test\Api.Services.Core.SmartCharging.UnitTests.csproj", "{13ACB973-85DE-4DAC-93A1-2857C8194BD1}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Api.Services.Core.SmartCharging.Database", "Api.Services.Core.SmartCharging.Database\Api.Services.Core.SmartCharging.Database.sqlproj", "{2BD9366B-F64E-41DD-816A-6C8EAC68146A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,12 @@ Global
 		{13ACB973-85DE-4DAC-93A1-2857C8194BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13ACB973-85DE-4DAC-93A1-2857C8194BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13ACB973-85DE-4DAC-93A1-2857C8194BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BD9366B-F64E-41DD-816A-6C8EAC68146A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BD9366B-F64E-41DD-816A-6C8EAC68146A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BD9366B-F64E-41DD-816A-6C8EAC68146A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2BD9366B-F64E-41DD-816A-6C8EAC68146A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BD9366B-F64E-41DD-816A-6C8EAC68146A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BD9366B-F64E-41DD-816A-6C8EAC68146A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

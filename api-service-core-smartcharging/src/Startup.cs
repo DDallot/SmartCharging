@@ -17,7 +17,6 @@ namespace Api.Services.Core.SmartCharging
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddAutoMapper(typeof(Startup));
             services.AddControllers();
 
             services.AddApiVersioning(setup =>
@@ -37,6 +36,7 @@ namespace Api.Services.Core.SmartCharging
             services.ConfigureOptions<ConfigureSwaggerOptions>();
 
             services.Initialize(Configuration);
+            SetupDataBase.Initialize();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
