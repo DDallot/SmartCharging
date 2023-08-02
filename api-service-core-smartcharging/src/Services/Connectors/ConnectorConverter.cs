@@ -9,9 +9,9 @@ namespace Api.Services.Core.SmartCharging.Services.Connectors
         {
             return new Connector
             {
-                Identifier = value.Identifier,
-                ChargeStationId = value.ChargeStationId,
-                MaxCurrent = value.MaxCurrent
+                Identifier = value?.Identifier ?? 0,
+                ChargeStationId = value?.ChargeStationId ?? 0,
+                MaxCurrent = value?.MaxCurrent ?? 0
             };
         }
 
@@ -21,7 +21,7 @@ namespace Api.Services.Core.SmartCharging.Services.Connectors
             {
                 Identifier = identifier,
                 ChargeStationId = chargeStationId,
-                MaxCurrent = value.MaxCurrent
+                MaxCurrent = value?.MaxCurrent ?? 0
             };
         }
     }

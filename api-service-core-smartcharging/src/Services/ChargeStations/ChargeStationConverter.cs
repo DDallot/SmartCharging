@@ -9,8 +9,8 @@ namespace Api.Services.Core.SmartCharging.Services.ChargeStations
         {
             return new ChargeStation
             {
-                Name = value.Name,
-                GroupId = value.GroupId
+                Name = value?.Name ?? string.Empty,
+                GroupId = value?.GroupId ?? 0
             };
         }
 
@@ -19,8 +19,8 @@ namespace Api.Services.Core.SmartCharging.Services.ChargeStations
             return new ChargeStation
             {
                 Identifier = identifier,
-                Name = value.Name,
-                GroupId = value.GroupId
+                Name = value?.Name ?? string.Empty,
+                GroupId = value?.GroupId ?? 0
             };
         }
     }

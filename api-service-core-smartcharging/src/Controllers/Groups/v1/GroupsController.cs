@@ -16,6 +16,12 @@ namespace Api.Services.Core.SmartCharging.Controllers.SmartChargings.v1
             _groupService = groupService ?? throw new ArgumentNullException(nameof(groupService));
         }
 
+        [HttpGet()]
+        public async Task<ItemResult<GroupResponse>> GetAsync(int identifier)
+        {
+            return await _groupService.GetAsync(identifier);
+        }
+
         [HttpPost()]
         public async Task<ItemResult<int>> CreateAsync(CreateGroupRequest value)
         {
@@ -29,9 +35,9 @@ namespace Api.Services.Core.SmartCharging.Controllers.SmartChargings.v1
         }
 
         [HttpDelete()]
-        public async Task<ItemResult<bool>> DeleteAsync(int id)
+        public async Task<ItemResult<bool>> DeleteAsync(int identifier)
         {
-            return await _groupService.DeleteAsync(id);
+            return await _groupService.DeleteAsync(identifier);
         }
     }
 }

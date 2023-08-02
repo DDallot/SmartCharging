@@ -9,17 +9,18 @@ The Smart Charging API project promises to provide a robust and reliable platfor
 I'm committed to delivering a cutting-edge solution that aligns with industry standards and empowers users to manage their charging infrastructure efficiently. I look forward to a successful project that fosters sustainable transportation and supports the widespread adoption of electric vehicles.
 
 # Dependencies
-* Api.Contracts.Core.SmartCharging
-* Api.Services.Core.SmartCharging
+* Api.Contracts.Core.SmartCharging (net6.0)
+* Api.Services.Core.SmartCharging (net6.0)
 	* Dapper (2.0.143)
 	* FluentValidation.AspNetCore (11.3.0)
     * Microsoft.AspNetCore.Mvc.Versioning (5.0.0)
     * Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer (5.0.0)
     * Swashbuckle.AspNetCore(6.2.3)
 	* System.Data.SqlClient (4.8.5)
-* Api.Services.Core.SmartCharging.UnitTests
+* Api.Services.Core.SmartCharging.UnitTests (net6.0)
     * FakeItEasy (7.4.0)
 	* FluentAssertions (6.11.0)
+	* Microsoft.AspNetCore.Mvc.Testing (6.0.20)
     * Microsoft.NET.Test.Sdk (16.11.0)
 	* coverlet.collector (3.1.0)
     * xunit (2.5.0)
@@ -59,3 +60,4 @@ The Charge Station cannot exist in the domain without Group.
 4. Now, run the profile `Api.Services.Core.SmartCharging`.
 
 5. Your default web browser should automatically open to http://localhost:5001/swagger/index.html.
+

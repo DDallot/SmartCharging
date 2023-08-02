@@ -23,6 +23,23 @@ namespace Api.Services.Core.SmartCharging.Services.Groups
             _groupValidator = groupValidator ?? throw new ArgumentNullException(nameof(groupValidator));
         }
 
+        public async Task<ItemResult<GroupResponse>> GetAsync(int identifier)
+        {
+            try
+            {
+                var result = (await _groupDal.GetAsync(identifier)).Convert();
+                return new ItemResult<GroupResponse> { Item = result };
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error ocurred while deleting a Group");
+                return new ItemResult<GroupResponse>
+                {
+                    HasError = true,
+                    Errors = new List<string> { "An error ocurred while deleting a Group" }
+                };
+            }
+        }
         public async Task<ItemResult<int>> CreateAsync(CreateGroupRequest value)
         {
             try
