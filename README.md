@@ -40,3 +40,17 @@ The Charge Station cannot exist in the domain without Group.
 6. The Max current in Amps of an existing Connector can be changed (updated).
 7. The Capacity in Amps of a Group should always be greater than or equal to the sum of the Max current in Amps of all Connectors indirectly belonging to the Group.
 8. All operations/requests not meeting the above requirement should be rejected.
+
+# Getting started
+
+## Setup
+
+1. To set up the database, tables, and populate the data, run the script `Scripts\InitializeDataBase`.
+
+2. Create stored procedures by running the script `Scripts\InitializeStoredProcedures`.
+
+3. Open Visual Studio and set `Api.Services.Core.SmartCharging` as the Startup Project.
+
+4. Now, run the profile `Api.Services.Core.SmartCharging`.
+
+5. Your default web browser should automatically open to http://localhost:5001/swagger/index.html.

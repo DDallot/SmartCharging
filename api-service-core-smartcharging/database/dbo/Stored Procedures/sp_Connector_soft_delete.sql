@@ -1,4 +1,5 @@
-﻿CREATE PROCEDURE [dbo].[sp_Connector_soft_delete]
+﻿-- DROP PROCEDURE dbo.sp_Connector_soft_delete;
+CREATE PROCEDURE [dbo].[sp_Connector_soft_delete]
 	@Identifier INT,
 	@ChargeStationId INT
 AS

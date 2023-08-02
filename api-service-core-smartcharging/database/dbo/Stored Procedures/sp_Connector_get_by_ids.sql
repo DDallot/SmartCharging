@@ -1,4 +1,5 @@
-﻿CREATE PROCEDURE [dbo].[sp_Connector_get_by_ids]
+﻿-- DROP PROCEDURE dbo.sp_Connector_get_by_ids
+CREATE PROCEDURE [dbo].[sp_Connector_get_by_ids]
 	@Identifier INT,
 	@ChargeStationId INT
 AS

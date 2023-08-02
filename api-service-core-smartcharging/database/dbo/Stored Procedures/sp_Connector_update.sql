@@ -1,4 +1,5 @@
-﻿CREATE PROCEDURE [dbo].[sp_Connector_update]
+﻿-- DROP PROCEDURE dbo.sp_Connector_update;
+CREATE PROCEDURE [dbo].[sp_Connector_update]
 	@Identifier INT,
 	@ChargeStationId INT,
 	@MaxCurrent INT

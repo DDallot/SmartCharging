@@ -1,4 +1,5 @@
-﻿CREATE PROCEDURE [dbo].[sp_Connector_get_full_hierarchy_max_current_sum]
+﻿-- DROP PROCEDURE dbo.sp_Connector_get_full_hierarchy_max_current_sum;
+CREATE PROCEDURE [dbo].[sp_Connector_get_full_hierarchy_max_current_sum]
 	@Identifier INT,
 	@ChargeStationId INT
 AS

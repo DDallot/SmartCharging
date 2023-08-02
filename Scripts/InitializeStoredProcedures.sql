@@ -1,6 +1,96 @@
 Use SmartCharging
 
 GO
+IF OBJECT_ID('dbo.sp_Group_insert', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE dbo.sp_Group_insert;
+END
+
+GO
+IF OBJECT_ID('dbo.sp_Group_update', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE dbo.sp_Group_update;
+END
+
+GO
+IF OBJECT_ID('dbo.sp_Group_delete', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE dbo.sp_Group_delete;
+END
+
+GO
+IF OBJECT_ID('dbo.sp_Group_get_by_id', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE dbo.sp_Group_get_by_id;
+END
+
+GO
+IF OBJECT_ID('dbo.sp_Group_get_max_current_sum', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE dbo.sp_Group_get_max_current_sum;
+END
+
+GO
+IF OBJECT_ID('dbo.sp_ChargeStation_get_by_id', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE dbo.sp_ChargeStation_get_by_id;
+END
+
+GO
+IF OBJECT_ID('dbo.sp_ChargeStation_get_max_current_sum', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE dbo.sp_ChargeStation_get_max_current_sum;
+END
+
+GO
+IF OBJECT_ID('dbo.sp_ChargeStation_update', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE dbo.sp_ChargeStation_update;
+END
+
+GO
+IF OBJECT_ID('dbo.sp_ChargeStation_delete', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE dbo.sp_ChargeStation_delete;
+END
+
+GO
+IF OBJECT_ID('dbo.sp_ChargeStation_insert', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE dbo.sp_ChargeStation_insert;
+END
+
+GO
+IF OBJECT_ID('dbo.sp_Connector_insert', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE dbo.sp_Connector_insert;
+END
+
+GO
+IF OBJECT_ID('dbo.sp_Connector_soft_delete', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE dbo.sp_Connector_soft_delete;
+END
+
+GO
+IF OBJECT_ID('dbo.sp_Connector_update', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE dbo.sp_Connector_update;
+END
+
+GO
+IF OBJECT_ID('dbo.sp_Connector_get_by_ids', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE dbo.sp_Connector_get_by_ids;
+END
+
+GO
+IF OBJECT_ID('dbo.sp_Connector_get_full_hierarchy_max_current_sum', 'P') IS NOT NULL
+BEGIN
+    DROP PROCEDURE dbo.sp_Connector_get_full_hierarchy_max_current_sum;
+END
+
+GO
 -- DROP PROCEDURE dbo.sp_Group_insert; 
 CREATE PROCEDURE [dbo].[sp_Group_insert]
 	@Name TEXT,
@@ -173,6 +263,7 @@ BEGIN
 	WHERE Identifier = @Identifier AND ChargeStationId = @ChargeStationId	
 END
 
+GO
 -- DROP PROCEDURE dbo.sp_Connector_update;
 CREATE PROCEDURE [dbo].[sp_Connector_update]
 	@Identifier INT,
@@ -230,22 +321,3 @@ BEGIN
 	JOIN MyGroup g on cs.GroupId = g.Identifier
 	WHERE cs.GroupId = @upper_group_Id;
 END
-
-
-/*
-DROP PROCEDURE dbo.sp_Group_insert; 
-DROP PROCEDURE dbo.sp_Group_update; 
-DROP PROCEDURE dbo.sp_Group_delete;
-DROP PROCEDURE dbo.sp_Group_get_by_id
-DROP PROCEDURE dbo.sp_Group_get_max_current_sum;
-DROP PROCEDURE dbo.sp_ChargeStation_get_by_id
-DROP PROCEDURE dbo.sp_ChargeStation_get_max_current_sum;
-DROP PROCEDURE dbo.sp_ChargeStation_update;
-DROP PROCEDURE dbo.sp_ChargeStation_delete;
-DROP PROCEDURE dbo.sp_ChargeStation_insert; 
-DROP PROCEDURE dbo.sp_Connector_insert; 
-DROP PROCEDURE dbo.sp_Connector_soft_delete;
-DROP PROCEDURE dbo.sp_Connector_update;
-DROP PROCEDURE dbo.sp_Connector_get_by_ids
-DROP PROCEDURE dbo.sp_Connector_get_full_hierarchy_max_current_sum;
-*/

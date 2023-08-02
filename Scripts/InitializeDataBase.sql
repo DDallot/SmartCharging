@@ -1,4 +1,33 @@
+GO
+IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'SmartCharging')
+BEGIN
+    CREATE DATABASE SmartCharging;
+    PRINT 'SmartCharging database created successfully.';
+END
+ELSE
+BEGIN
+    PRINT 'SmartCharging database already exists.';
+END
+
+GO
 USE SmartCharging
+
+
+IF OBJECT_ID('Connector', 'U') IS NOT NULL
+BEGIN
+    DROP TABLE Connector;
+END
+
+IF OBJECT_ID('ChargeStation', 'U') IS NOT NULL
+BEGIN
+    DROP TABLE ChargeStation;
+END
+
+IF OBJECT_ID('MyGroup', 'U') IS NOT NULL
+BEGIN
+    DROP TABLE MyGroup;
+END
+
 
 -- Create the Group table
 CREATE TABLE MyGroup (
@@ -73,8 +102,4 @@ select * from Connector
 Delete from MyGroup
 Delete from ChargeStation
 Delete from Connector
-
-DROP TABLE Connector;
-DROP TABLE ChargeStation;
-DROP TABLE MyGroup;
 */
