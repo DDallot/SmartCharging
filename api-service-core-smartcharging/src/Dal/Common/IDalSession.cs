@@ -2,6 +2,6 @@
 {
     public interface IDalSession : IDisposable
     {
-        UnitOfWork UnitOfWork { get; }
+        IUnitOfWork UnitOfWork { get;}
     }
 }

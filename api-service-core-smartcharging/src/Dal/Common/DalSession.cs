@@ -17,10 +17,7 @@ namespace Api.Services.Core.SmartCharging.Dal.Common
             _unitOfWork = new UnitOfWork(_connection);
         }
 
-        public UnitOfWork UnitOfWork
-        {
-            get { return _unitOfWork; }
-        }
+        IUnitOfWork IDalSession.UnitOfWork => _unitOfWork;
 
         public void Dispose()
         {

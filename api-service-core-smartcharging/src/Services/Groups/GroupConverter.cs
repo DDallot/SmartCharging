@@ -3,7 +3,7 @@ using Api.Services.Core.SmartCharging.Dal.GroupDal;
 
 namespace Api.Services.Core.SmartCharging.Services.Groups
 {
-    public static class GroupProfile
+    public static class GroupConverter
     {
         public static Group Convert(this CreateGroupRequest value)
         {

@@ -6,16 +6,19 @@ An API that exposes a simplified smart charging
 # Dependencies
 * Api.Contracts.Core.SmartCharging
 * Api.Services.Core.SmartCharging
+	* Dapper (2.0.143)
 	* FluentValidation.AspNetCore (11.3.0)
     * Microsoft.AspNetCore.Mvc.Versioning (5.0.0)
     * Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer (5.0.0)
     * Swashbuckle.AspNetCore(6.2.3)
-	* System.Data.SqlClient (6.2.3)
+	* System.Data.SqlClient (4.8.5)
 * Api.Services.Core.SmartCharging.UnitTests
-    * FluentAssertions (4.8.5)
+    * FakeItEasy (7.4.0)
+	* FluentAssertions (6.11.0)
     * Microsoft.NET.Test.Sdk (16.11.0)
-    * xunit (3.13.2)
-    * NUnit3TestAdapter (4.0.0)
+	* coverlet.collector (3.1.0)
+    * xunit (2.5.0)
+    * xunit.runner.visualstudio (2.5.0)
 * Api.Services.Core.SmartCharging.Database
 
 # Domain model
