@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Contracts.Core.SmartCha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api.Services.Core.SmartCharging.UnitTests", "test\Api.Services.Core.SmartCharging.UnitTests.csproj", "{13ACB973-85DE-4DAC-93A1-2857C8194BD1}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Api.Services.Core.SmartCharging.Database", "Api.Services.Core.SmartCharging.Database\Api.Services.Core.SmartCharging.Database.sqlproj", "{2BD9366B-F64E-41DD-816A-6C8EAC68146A}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Api.Services.Core.SmartCharging.Database", "database\Api.Services.Core.SmartCharging.Database.sqlproj", "{2BD9366B-F64E-41DD-816A-6C8EAC68146A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
