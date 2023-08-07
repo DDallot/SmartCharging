@@ -1,6 +1,6 @@
 # Introduction
 
-## Smart Charging API Project Version - 14
+## Smart Charging API
 
 My mission is to develop an efficient and user-friendly API that exposes a simplified smart charging. This API will allow users to manage groups, charge stations, and connectors in a seamless manner, ensuring smooth and reliable charging experiences for electric vehicles.
 
